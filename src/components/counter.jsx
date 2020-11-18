@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.counter.value !== this.props.counter.value) {
+            // Ajax call to get new date from server
+        }
+    }
+
+    componentWillUnmount() {
+
+    }
+ 
     render() {
         return (
             <div>
