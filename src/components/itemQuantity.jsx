@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-const NavBar = ({ totalCounters }) => {
+const ItemQuantity = ({ itemQuantity }) => {
     return (
         <nav className="navbar navbar-light bg-light">
         <a className="navbar-brand" href="#">
-            Navbar
+            Number of items:
             <span className="badge badge-pill badge-secondary" style={{marginLeft:5}}>
-                {totalCounters}
+                {itemQuantity}
             </span>
         </a>
         </nav>
     )
 };
 
- export default NavBar;
+ export default ItemQuantity;
