@@ -1,16 +1,16 @@
 import React from 'react';
 
-const ItemTotal = ({ itemTotal }) => {
+const PriceTotal = ({ priceTotal }) => {
     return (
         <nav className="navbar navbar-light bg-light">
         <a className="navbar-brand" href="#">
-            Individual item total:
+            Total price:
             <span className="badge badge-pill badge-secondary" style={{marginLeft:5}}>
-                {itemTotal}
+                £{parseFloat(priceTotal).toFixed(2)}
             </span>
         </a>
         </nav>
     )
 };
 
- export default ItemTotal;
+ export default PriceTotal;
